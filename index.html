@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="font-[Poppins]">
+
+    <div class="Container max-w-[1200px] border mx-auto  px-5 py-6 lg:px-10">
+        <!-- Header Section Starts -->
+        <header class="flex justify-between items-center h-[17vh]">
+
+            <div class="logo font-medium tracking-wide text-xl md:text-3xl">Jeet Ramnani</div>
+            <nav>
+                <span class="lg:hidden text-3xl">&#9776;</span>
+                <ul class="hidden lg:flex lg:gap-10 lg:font-normal lg:tracking-wide lg:text-2xl">
+                    <li>About</li>
+                    <li>Experience</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Header Section Ends -->
+
+        <!-- Main Section Starts -->
+        <main class=" flex justify-center items-center flex-col">
+            <section class="hero  lg:flex lg:items-center gap-32 h-[83vh]">
+                <div class="hero-image">
+                    <img src="https://scontent.fhdd2-1.fna.fbcdn.net/v/t1.6435-9/47572797_2392399334135258_714054797044482048_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEDVNq-c89-V2bKQNbX78IZFCtd8L-Dz-0UK13wv4PP7XpY9EVRtIsSquF6jTcpr444PNZkieyX19kXBUo1anSQ&_nc_ohc=9HkoEYZSrb4AX9Ty_wc&_nc_ht=scontent.fhdd2-1.fna&oh=00_AfCrONY2kPBdVgzOEFhxxb0ASQbta_VhPaSu66cRjckd5g&oe=64F24A67"
+                        alt="my-image"
+                        class="w-40 h-40 sm:w-60 sm:h-60 lg:w-96 lg:h-96 rounded-full object-cover mx-auto " />
+                </div>
+                <div class="hero-intro text-center flex flex-col items-center sm:gap-5 lg:gap-4 gap-2 pt-10">
+                    <div class="text-[#555555] font-bold sm:text-xl text-lg lg:text-2xl">Hello, I'm</div>
+                    <div class="font-semibold text-2xl sm:text-3xl lg:text-4xl">Jeet Ramnani</div>
+                    <div class="text-[#555555] font-semibold text-xl sm:text-3xl lg:text-4xl">Full Stack Developer</div>
+                    <div class="more-info flex flex-col gap-5 md:flex-row">
+                        <button
+                            class="bg-transparent border border-2 border-black py-3 px-5 rounded-3xl font-medium text-sm hover:bg-[#333] hover:text-white transition duration-500">Download
+                            CV</button>
+                        <button
+                            class="border border-2 border-black py-3 rounded-3xl font-medium text-white bg-[#333] px-5 text-sm hover:bg-black transition duration-500">Contact
+                            Info</button>
+                        <span id="widthCounter" class="absolute"></span>
+                    </div>
+
+                    <div class="social-links flex gap-5 justify-center mt-3">
+                        <i class="fa-brands fa-github hover:text-blue-500 text-4xl cursor-pointer"></i>
+                        <i class="fa-brands fa-facebook hover:text-sky-600 text-4xl cursor-pointer"></i>
+                        <i class="fa-brands fa-youtube hover:text-red-600 text-4xl cursor-pointer"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-me h-screen w-full ">
+                <div class="title text-center">
+                    <p class="text-[#555555] text-sm md:text-xl lg:text-3xl">Get To Know More</p>
+                    <h3 class="font-semibold text-2xl md:text-4xl lg:text-6xl mt-2">About Me</h3>
+                </div>
+                <div class="image-and-education lg:flex lg:items-center lg:mt-20">
+                    <div class="about-image lg:w-[50%]">
+                        <img src="https://scontent.fhdd2-1.fna.fbcdn.net/v/t1.6435-9/35542625_2056496294392232_6009574513224712192_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=xd6vfa8pDlYAX99X4oM&_nc_ht=scontent.fhdd2-1.fna&oh=00_AfDBQOD0CYTaYR9DOlGh-HwPbtnAXkqt6GL2CQmWq8zWgQ&oe=6504B32A"
+                            alt="about image"
+                            class="w-36 h-36 md:w-60 md:h-60 lg:w-96 lg:h-96 rounded-2xl mt-4 mx-auto" />
+                    </div>
+                    <div class="lg:w-[80%]">
+                        <div class="experience-and-education md:flex md:gap-8 ">
+                            <article
+                                class="experience border-2 border-gray-300 rounded-3xl flex flex-col items-center justify-center mt-5 p-5 w-full">
+                                <i class="fa-solid fa-award text-2xl"></i>
+                                <h4 class="text-lg font-semibold">Experience</h4>
+                                <p class="text-lg text-[#555555]">1+ Years</p>
+                                <p class="text-lg text-[#555555]">Full Stack Development</p>
+                            </article>
+                            <article
+                                class="education border-2 border-gray-300 rounded-3xl flex flex-col items-center justify-center mt-5 p-5 w-full">
+                                <i class="fa-solid fa-user-graduate text-2xl"></i>
+                                <h4 class="text-lg font-semibold">Education</h4>
+                                <p class="text-lg text-[#555555]">Becholors Degree</p>
+                                <p class="text-lg text-[#555555] text-center">Becholors In Information Technology</p>
+                            </article>
+
+                        </div>
+                        <p class="mt-5 text-justify">I am a proficient full stack web developer with over a year of
+                            hands-on
+                            experience. Holding a bachelor's degree in Information Technology, I combine technical
+                            expertise
+                            with a passion for creating dynamic and user-friendly web applications. Committed to
+                            delivering
+                            innovative solutions that blend functionality and aesthetics seamlessly.</p>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+        <!-- Main Section Ends -->
+
+    </div>
+
+
+    <script>
+        setInterval(() => { document.getElementById("widthCounter").innerHTML = `Width: ${innerWidth} ` }, 1000)
+
+    </script>
+
+</body>
+
+</html>
