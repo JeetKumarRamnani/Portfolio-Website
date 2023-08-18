@@ -23,16 +23,28 @@
 
     <div class="Container max-w-[1200px] border mx-auto  px-5  lg:px-10">
         <!-- Header Section Starts -->
-        <header class="flex justify-between py-5 items-start h-[17vh]">
+        <header class="flex justify-around  py-5 items-center">
 
             <div class="logo font-medium tracking-wide text-xl md:text-3xl">Jeet Ramnani</div>
             <nav>
-                <span class="lg:hidden text-3xl">&#9776;</span>
-                <ul class="hidden lg:flex lg:gap-10 lg:font-normal lg:tracking-wide lg:text-2xl">
-                    <li>About</li>
-                    <li>Experience</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                <div class="mobile-nav relative lg:hidden">
+                    <span class="hamburger text-3xl cursor-pointer">&#9776;</span>
+                    <nav class="mobile-navbar p-10 absolute top-8 right-0 bg-white hidden">
+                        <ul class="flex flex-col justify-center gap-10 font-normal tracking-wide text-2xl items-center">
+                            <li class="hover:text-red-600 transition duration-500"><a href="#aboutMe">About</a></li>
+                            <li class="hover:text-red-600 transition duration-500"><a href="#skills">Experience</a></li>
+                            <li class="hover:text-red-600 transition duration-500"><a href="#projects">Projects</a></li>
+                            <li class="hover:text-red-600 transition duration-500"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <ul
+                    class="desktop-nav hidden transition duration-700 lg:flex lg:gap-10 lg:font-normal lg:tracking-wide lg:text-2xl">
+                    <li class="hover:text-red-600 transition duration-500"><a href="#">About</a></li>
+                    <li class="hover:text-red-600 transition duration-500"><a href="#">Experience</a></li>
+                    <li class="hover:text-red-600 transition duration-500"><a href="#">Projects</a></li>
+                    <li class="hover:text-red-600 transition duration-500"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -40,11 +52,11 @@
 
         <!-- Main Section Starts -->
         <main class=" flex justify-center items-center flex-col">
-            <section class="hero  lg:flex lg:items-center gap-32 h-[83vh]">
+            <section class="mt-20 lg:mt-0 hero lg:flex lg:flex-row lg:items-center lg:gap-32 h-screen">
                 <div class="hero-image">
                     <img src="https://scontent.fhdd2-1.fna.fbcdn.net/v/t1.6435-9/47572797_2392399334135258_714054797044482048_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEDVNq-c89-V2bKQNbX78IZFCtd8L-Dz-0UK13wv4PP7XpY9EVRtIsSquF6jTcpr444PNZkieyX19kXBUo1anSQ&_nc_ohc=9HkoEYZSrb4AX9Ty_wc&_nc_ht=scontent.fhdd2-1.fna&oh=00_AfCrONY2kPBdVgzOEFhxxb0ASQbta_VhPaSu66cRjckd5g&oe=64F24A67"
                         alt="my-image"
-                        class="w-40 h-40 sm:w-60 sm:h-60 lg:w-96 lg:h-96 rounded-full object-cover mx-auto " />
+                        class="w-52 h-52 sm:w-60 sm:h-60 lg:w-96 lg:h-96 rounded-full object-cover mx-auto shadow-md " />
                 </div>
                 <div class="hero-intro text-center flex flex-col items-center sm:gap-5 lg:gap-4 gap-2 pt-10">
                     <div class="text-[#555555] font-bold sm:text-xl text-lg lg:text-2xl">Hello, I'm</div>
@@ -52,10 +64,10 @@
                     <div class="text-[#555555] font-semibold text-xl sm:text-3xl lg:text-4xl">Full Stack Developer</div>
                     <div class="more-info flex flex-col gap-5 md:flex-row">
                         <button
-                            class="bg-transparent border border-2 border-black py-3 px-5 rounded-3xl font-medium text-sm hover:bg-[#333] hover:text-white transition duration-500">Download
+                            class="bg-transparent border-2 border-black py-3 px-5 rounded-3xl font-medium text-sm hover:bg-[#333] hover:text-white transition duration-500">Download
                             CV</button>
                         <button
-                            class="border border-2 border-black py-3 rounded-3xl font-medium text-white bg-[#333] px-5 text-sm hover:bg-black transition duration-500">Contact
+                            class="border-2 border-black py-3 rounded-3xl font-medium text-white bg-[#333] px-5 text-sm hover:bg-black transition duration-500">Contact
                             Info</button>
                         <span id="widthCounter" class="absolute"></span>
                     </div>
@@ -68,7 +80,7 @@
                 </div>
             </section>
 
-            <section class="about-me h-screen w-full ">
+            <section id="aboutMe" class="about-me h-screen w-full ">
                 <div class="title text-center">
                     <p class="text-[#555555] text-sm md:text-xl lg:text-3xl">Get To Know More</p>
                     <h3 class="font-semibold text-2xl md:text-4xl lg:text-6xl mt-2">About Me</h3>
@@ -77,7 +89,7 @@
                     <div class="about-image lg:w-[50%]">
                         <img src="https://scontent.fhdd2-1.fna.fbcdn.net/v/t1.6435-9/35542625_2056496294392232_6009574513224712192_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=xd6vfa8pDlYAX99X4oM&_nc_ht=scontent.fhdd2-1.fna&oh=00_AfDBQOD0CYTaYR9DOlGh-HwPbtnAXkqt6GL2CQmWq8zWgQ&oe=6504B32A"
                             alt="about image"
-                            class="w-36 h-36 md:w-60 md:h-60 lg:w-96 lg:h-96 rounded-2xl mt-4 mx-auto shadow-md shadow-red-400" />
+                            class="w-36 h-36 md:w-60 md:h-60 lg:w-96 lg:h-96 rounded-2xl mt-4 mx-auto shadow-md" />
                     </div>
                     <div class="lg:w-[80%]">
                         <div class="experience-and-education md:flex md:gap-8 ">
@@ -110,7 +122,7 @@
 
             </section>
 
-            <section class="skills h-screen text-center w-full mt-20">
+            <section id="skills" class="skills text-center mb-48 w-full mt-20">
                 <div class="section-title">
                     <p class="text-[#555555] text-sm md:text-lg mb-2 ">Explore My</p>
                     <h4 class="text-3xl font-semibold md:text-5xl">Skills</h4>
@@ -257,7 +269,7 @@
                 </div>
             </section>
 
-            <section class="projects h-screen w-full mt-[600px] text-center">
+            <section id="projects" class="projects w-full text-center mb-48">
                 <div class="section-title">
                     <p class="text-[#555555] text-sm md:text-lg mb-2 ">Browse My Recent</p>
                     <h4 class="text-3xl font-semibold md:text-5xl">Projects</h4>
@@ -265,48 +277,54 @@
 
                 <div class="project-showcase mt-5 flex flex-col gap-5 lg:flex-row">
                     <article class="project-1 flex flex-col gap-5 border-2 rounded-2xl overflow-hidden p-8 w-full">
-                        <img src="https://thriving-dragon-a3fcd9.netlify.app/assets/project-1.png" alt="project 1"
-                            class="w-full rounded-2xl">
+                        <img src="./assests/project-1.PNG" alt="project 1" class="w-full h-72 rounded-2xl object-cover">
                         <h3 class="font-semibold text-2xl">Project One</h3>
                         <div class="buttons flex gap-3 justify-center items-center">
                             <button
-                                class="border rounded-3xl p-2 px-5 border-black font-medium  hover:text-white transition duration-500 hover:bg-[#333] ">Github</button>
+                                class="border rounded-3xl p-2 px-5 border-black font-medium  hover:text-white transition duration-500 hover:bg-[#333] "><a
+                                    href="https://github.com/JeetKumarRamnani/blog-website"
+                                    target="_blank">Github</a></button>
                             <button
-                                class="border rounded-3xl p-2 px-5 border-black font-medium hover:text-white transition duration-500 hover:bg-[#333] ">Live
-                                Demo</button>
+                                class="border rounded-3xl p-2 px-5 border-black font-medium hover:text-white transition duration-500 hover:bg-[#333] "><a
+                                    href="https://blog-for-programmers.netlify.app/" target="_blank">Live
+                                    Demo</a></button>
                         </div>
                     </article>
 
-                    <article class="project-1 flex flex-col gap-5 border-2 rounded-2xl overflow-hidden p-8 w-full">
-                        <img src="https://thriving-dragon-a3fcd9.netlify.app/assets/project-1.png" alt="project 1"
-                            class="w-full rounded-2xl">
-                        <h3 class="font-semibold text-2xl">Project One</h3>
+                    <article class="project-2 flex flex-col gap-5 border-2 rounded-2xl overflow-hidden p-8 w-full">
+                        <img src="./assests/project-2.PNG" alt="project 2" class="w-full h-72 rounded-2xl object-cover">
+                        <h3 class="font-semibold text-2xl">Project Two</h3>
                         <div class="buttons flex gap-3 justify-center items-center">
                             <button
-                                class="border rounded-3xl p-2 px-5 border-black font-medium  hover:text-white transition duration-500 hover:bg-[#333] ">Github</button>
+                                class="border rounded-3xl p-2 px-5 border-black font-medium  hover:text-white transition duration-500 hover:bg-[#333] "><a
+                                    href="https://github.com/JeetKumarRamnani/find-jobs-portal-design"
+                                    target="_blank">Github</a></button>
                             <button
-                                class="border rounded-3xl p-2 px-5 border-black font-medium hover:text-white transition duration-500 hover:bg-[#333] ">Live
-                                Demo</button>
+                                class="border rounded-3xl p-2 px-5 border-black font-medium hover:text-white transition duration-500 hover:bg-[#333] "><a
+                                    href="https://find-jobs-portal-design.netlify.app/" target="_blank">Live
+                                    Demo</a></button>
                         </div>
                     </article>
 
-                    <article class="project-1 flex flex-col gap-5 border-2 rounded-2xl overflow-hidden p-8 w-full">
-                        <img src="https://thriving-dragon-a3fcd9.netlify.app/assets/project-1.png" alt="project 1"
-                            class="w-full rounded-2xl">
-                        <h3 class="font-semibold text-2xl">Project One</h3>
+                    <article class="project-3 flex flex-col gap-5 border-2 rounded-2xl overflow-hidden p-8 w-full">
+                        <img src="./assests/project-3.PNG" alt="project 3" class="w-full h-72 rounded-2xl object-cover">
+                        <h3 class="font-semibold text-2xl">Project Three</h3>
                         <div class="buttons flex gap-3 justify-center items-center">
                             <button
-                                class="border rounded-3xl p-2 px-5 border-black font-medium  hover:text-white transition duration-500 hover:bg-[#333] ">Github</button>
+                                class="border rounded-3xl p-2 px-5 border-black font-medium  hover:text-white transition duration-500 hover:bg-[#333] "><a
+                                    href="https://github.com/JeetKumarRamnani/Weather-App/"
+                                    target="_blank">Github</a></button>
                             <button
-                                class="border rounded-3xl p-2 px-5 border-black font-medium hover:text-white transition duration-500 hover:bg-[#333] ">Live
-                                Demo</button>
+                                class="border rounded-3xl p-2 px-5 border-black font-medium hover:text-white transition duration-500 hover:bg-[#333] "><a
+                                    href="https://jeetkumarramnani.github.io/Weather-App/" target="_blank">Live
+                                    Demo</a></button>
                         </div>
                     </article>
                 </div>
             </section>
 
-            <section
-                class="Contact-Me h-screen  w-full mt-[600px] text-center flex flex-col items-center justify-center gap-5 ">
+            <section id="contact"
+                class="Contact-Me mb-48  w-full  text-center flex flex-col items-center justify-center gap-5 ">
                 <div class="section-title">
                     <p class="text-[#555555] text-sm md:text-lg mb-2 ">Get in Touch</p>
                     <h4 class="text-3xl font-semibold md:text-5xl">Contact</h4>
@@ -331,10 +349,10 @@
 
         <footer class="flex flex-col gap-8 p-3">
             <ul class="flex flex-col items-center md:flex-row justify-center gap-10 font-normal tracking-wide text-2xl">
-                <li>About</li>
-                <li>Experience</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li class="hover:text-red-600 transition duration-500"><a href="#">About</a></li>
+                <li class="hover:text-red-600 transition duration-500"><a href="#">Experience</a></li>
+                <li class="hover:text-red-600 transition duration-500"><a href="#">Projects</a></li>
+                <li class="hover:text-red-600 transition duration-500"><a href="#">Contact</a></li>
             </ul>
 
             <div class="Copyright-Section text-[#555555] text-center">
@@ -350,6 +368,17 @@
         setInterval(() => { document.getElementById("widthCounter").innerHTML = `Width: ${innerWidth} ` }, 1000)
 
     </script> -->
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const mobileNavbar = document.querySelector(".mobile-navbar");
+
+        hamburger.addEventListener("click", () => {
+            mobileNavbar.classList.toggle("hidden")
+        })
+
+
+    </script>
 
 </body>
 
