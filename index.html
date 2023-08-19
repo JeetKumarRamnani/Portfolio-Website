@@ -21,6 +21,7 @@
 
 <body class="font-[Poppins]">
 
+
     <div class="Container max-w-[1200px] border mx-auto  px-5  lg:px-10">
         <!-- Header Section Starts -->
         <header class="flex justify-around  py-5 items-center">
@@ -32,7 +33,7 @@
                     <nav class="mobile-navbar p-10 absolute top-8 right-0 bg-white hidden">
                         <ul class="flex flex-col justify-center gap-10 font-normal tracking-wide text-2xl items-center">
                             <li class="hover:text-red-600 transition duration-500"><a href="#aboutMe">About</a></li>
-                            <li class="hover:text-red-600 transition duration-500"><a href="#skills">Experience</a></li>
+                            <li class="hover:text-red-600 transition duration-500"><a href="#skills">Skills</a></li>
                             <li class="hover:text-red-600 transition duration-500"><a href="#projects">Projects</a></li>
                             <li class="hover:text-red-600 transition duration-500"><a href="#contact">Contact</a></li>
                         </ul>
@@ -41,17 +42,21 @@
 
                 <ul
                     class="desktop-nav hidden transition duration-700 lg:flex lg:gap-10 lg:font-normal lg:tracking-wide lg:text-2xl">
-                    <li class="hover:text-red-600 transition duration-500"><a href="#">About</a></li>
-                    <li class="hover:text-red-600 transition duration-500"><a href="#">Experience</a></li>
-                    <li class="hover:text-red-600 transition duration-500"><a href="#">Projects</a></li>
-                    <li class="hover:text-red-600 transition duration-500"><a href="#">Contact</a></li>
+                    <li class="hover:text-red-600 transition duration-500"><a href="#aboutMe">About</a></li>
+                    <li class="hover:text-red-600 transition duration-500"><a href="#skills">Skills</a></li>
+                    <li class="hover:text-red-600 transition duration-500"><a href="#projects">Projects</a></li>
+                    <li class="hover:text-red-600 transition duration-500"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <!-- Header Section Ends -->
 
         <!-- Main Section Starts -->
-        <main class=" flex justify-center items-center flex-col">
+        <main class=" flex justify-center items-center flex-col relative">
+            <div id="scrollToTopBtn" class="fixed bottom-0 right-0 text-2xl cursor-pointer" title="Back To Top">
+                <a href="#"><i class="fa-solid fa-angles-up"></i></a>
+
+            </div>
             <section class="mt-20 lg:mt-0 hero lg:flex lg:flex-row lg:items-center lg:gap-32 h-screen">
                 <div class="hero-image">
                     <img src="https://scontent.fhdd2-1.fna.fbcdn.net/v/t1.6435-9/47572797_2392399334135258_714054797044482048_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEDVNq-c89-V2bKQNbX78IZFCtd8L-Dz-0UK13wv4PP7XpY9EVRtIsSquF6jTcpr444PNZkieyX19kXBUo1anSQ&_nc_ohc=9HkoEYZSrb4AX9Ty_wc&_nc_ht=scontent.fhdd2-1.fna&oh=00_AfCrONY2kPBdVgzOEFhxxb0ASQbta_VhPaSu66cRjckd5g&oe=64F24A67"
@@ -349,10 +354,10 @@
 
         <footer class="flex flex-col gap-8 p-3">
             <ul class="flex flex-col items-center md:flex-row justify-center gap-10 font-normal tracking-wide text-2xl">
-                <li class="hover:text-red-600 transition duration-500"><a href="#">About</a></li>
-                <li class="hover:text-red-600 transition duration-500"><a href="#">Experience</a></li>
-                <li class="hover:text-red-600 transition duration-500"><a href="#">Projects</a></li>
-                <li class="hover:text-red-600 transition duration-500"><a href="#">Contact</a></li>
+                <li class="hover:text-red-600 transition duration-500"><a href="#aboutMe">About</a></li>
+                <li class="hover:text-red-600 transition duration-500"><a href="#skills">Skills</a></li>
+                <li class="hover:text-red-600 transition duration-500"><a href="#projects">Projects</a></li>
+                <li class="hover:text-red-600 transition duration-500"><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="Copyright-Section text-[#555555] text-center">
@@ -365,17 +370,38 @@
 
     <!-- 
     <script>
-        setInterval(() => { document.getElementById("widthCounter").innerHTML = `Width: ${innerWidth} ` }, 1000)
+        setInterval(() => { document.getElementById("widthCounter").innerHTML = `Width: ${window.scrollY} ` }, 1000)
 
     </script> -->
 
     <script>
         const hamburger = document.querySelector(".hamburger");
         const mobileNavbar = document.querySelector(".mobile-navbar");
+        const scrollToTopBtn = document.querySelector("#scrollToTopBtn");
 
         hamburger.addEventListener("click", () => {
             mobileNavbar.classList.toggle("hidden")
         })
+
+        // if(window.scrollY > 0){
+
+        // }
+        setInterval(function () {
+            if (window.scrollY > 300) {
+
+                console.log("if wala part")
+
+                scrollToTopBtn.style.display = "block";
+
+            } else {
+
+                console.log("else wala part")
+
+                scrollToTopBtn.style.display = "none";
+            }
+        }, 500)
+
+        // window.scrollY > 300 ? scrollToTopBtn.style.display = "block" : scrollToTopBtn.style.display = "none"
 
 
     </script>
