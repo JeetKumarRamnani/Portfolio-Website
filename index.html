@@ -78,9 +78,16 @@
                     </div>
 
                     <div class="social-links flex gap-5 justify-center mt-3">
-                        <i class="fa-brands fa-github hover:text-blue-500 text-4xl cursor-pointer"></i>
-                        <i class="fa-brands fa-facebook hover:text-sky-600 text-4xl cursor-pointer"></i>
-                        <i class="fa-brands fa-youtube hover:text-red-600 text-4xl cursor-pointer"></i>
+                        <a href="https://github.com/JeetKumarRamnani/" target="_blank">
+                            <i class="fa-brands fa-github hover:text-blue-500 text-4xl cursor-pointer"></i>
+                        </a>
+                        <a href="https://www.facebook.com/JeetKumarRamnani" target="_blank">
+                            <i class="fa-brands fa-facebook hover:text-sky-600 text-4xl cursor-pointer"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC7asBXilTdYCDRwhDDzjHuw" target="_blank">
+                            <i class="fa-brands fa-youtube hover:text-red-600 text-4xl cursor-pointer"></i>
+                        </a>
+
                     </div>
                 </div>
             </section>
@@ -280,7 +287,7 @@
                     <h4 class="text-3xl font-semibold md:text-5xl">Projects</h4>
                 </div>
 
-                <div class="project-showcase mt-5 flex flex-col gap-5 lg:flex-row">
+                <div id="projectsContainer" class="project-showcase mt-5 flex flex-col gap-5 lg:flex-row">
                     <article class="project-1 flex flex-col gap-5 border-2 rounded-2xl overflow-hidden p-8 w-full">
                         <img src="./assests/project-1.PNG" alt="project 1" class="w-full h-72 rounded-2xl object-cover">
                         <h3 class="font-semibold text-2xl">Project One</h3>
@@ -378,28 +385,39 @@
         const hamburger = document.querySelector(".hamburger");
         const mobileNavbar = document.querySelector(".mobile-navbar");
         const scrollToTopBtn = document.querySelector("#scrollToTopBtn");
+        const projectsContainer = document.getElementById("projectsContainer");
 
+        console.log(projectsContainer)
         hamburger.addEventListener("click", () => {
             mobileNavbar.classList.toggle("hidden")
         })
 
-        // if(window.scrollY > 0){
 
-        // }
-        setInterval(function () {
+
+        window.addEventListener("scroll", () => {
             if (window.scrollY > 300) {
-
-                console.log("if wala part")
 
                 scrollToTopBtn.style.display = "block";
 
             } else {
 
-                console.log("else wala part")
-
                 scrollToTopBtn.style.display = "none";
             }
-        }, 500)
+        })
+        // setInterval(function () {
+        //     if (window.scrollY > 300) {
+
+        //         console.log("if wala part")
+
+        //         scrollToTopBtn.style.display = "block";
+
+        //     } else {
+
+        //         console.log("else wala part")
+
+        //         scrollToTopBtn.style.display = "none";
+        //     }
+        // }, 500)
 
         // window.scrollY > 300 ? scrollToTopBtn.style.display = "block" : scrollToTopBtn.style.display = "none"
 
