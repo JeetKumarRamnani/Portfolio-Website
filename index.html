@@ -8,6 +8,7 @@
     <title>My Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./assests/picofme.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
@@ -59,9 +60,9 @@
             </div>
             <section class="mt-20 lg:mt-0 hero lg:flex lg:flex-row lg:items-center lg:gap-32 h-screen">
                 <div class="hero-image">
-                    <img src="https://scontent.fhdd2-1.fna.fbcdn.net/v/t1.6435-9/47572797_2392399334135258_714054797044482048_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEDVNq-c89-V2bKQNbX78IZFCtd8L-Dz-0UK13wv4PP7XpY9EVRtIsSquF6jTcpr444PNZkieyX19kXBUo1anSQ&_nc_ohc=9HkoEYZSrb4AX9Ty_wc&_nc_ht=scontent.fhdd2-1.fna&oh=00_AfCrONY2kPBdVgzOEFhxxb0ASQbta_VhPaSu66cRjckd5g&oe=64F24A67"
+                    <img src="./assests/portfolio picture.png"
                         alt="my-image"
-                        class="w-52 h-52 sm:w-60 sm:h-60 lg:w-96 lg:h-96 rounded-full object-cover mx-auto shadow-md " />
+                        class="w-52 h-52 sm:w-60 sm:h-60 lg:w-96 lg:h-96 rounded-full object-cover mx-auto shadow-md" />
                 </div>
                 <div class="hero-intro text-center flex flex-col items-center sm:gap-5 lg:gap-4 gap-2 pt-10">
                     <div class="text-[#555555] font-bold sm:text-xl text-lg lg:text-2xl">Hello, I'm</div>
@@ -281,59 +282,77 @@
                 </div>
             </section>
 
+            <!-- PROJETCS SECTION STARTED -->
+
             <section id="projects" class="projects w-full text-center mb-48">
                 <div class="section-title">
                     <p class="text-[#555555] text-sm md:text-lg mb-2 ">Browse My Recent</p>
                     <h4 class="text-3xl font-semibold md:text-5xl">Projects</h4>
                 </div>
 
-                <div id="projectsContainer" class="project-showcase mt-5 flex flex-col gap-5 lg:flex-row">
-                    <article class="project-1 flex flex-col gap-5 border-2 rounded-2xl overflow-hidden p-8 w-full">
-                        <img src="./assests/project-1.PNG" alt="project 1" class="w-full h-72 rounded-2xl object-cover">
-                        <h3 class="font-semibold text-2xl">Project One</h3>
-                        <div class="buttons flex gap-3 justify-center items-center">
-                            <button
-                                class="border rounded-3xl p-2 px-5 border-black font-medium  hover:text-white transition duration-500 hover:bg-[#333] "><a
-                                    href="https://github.com/JeetKumarRamnani/blog-website"
-                                    target="_blank">Github</a></button>
-                            <button
-                                class="border rounded-3xl p-2 px-5 border-black font-medium hover:text-white transition duration-500 hover:bg-[#333] "><a
-                                    href="https://blog-for-programmers.netlify.app/" target="_blank">Live
-                                    Demo</a></button>
-                        </div>
-                    </article>
+                <div class="projectWrapper relative">
+                    <i class="fa-solid fa-circle-arrow-left absolute top-1/2 left-0 text-4xl mr-10  cursor-pointer z-50"
+                        id="leftArrow"></i>
+                    <i class="fa-solid fa-circle-arrow-right absolute top-1/2 right-0 text-4xl ml-14 cursor-pointer z-50"
+                        id="rightArrow"></i>
 
-                    <article class="project-2 flex flex-col gap-5 border-2 rounded-2xl overflow-hidden p-8 w-full">
-                        <img src="./assests/project-2.PNG" alt="project 2" class="w-full h-72 rounded-2xl object-cover">
-                        <h3 class="font-semibold text-2xl">Project Two</h3>
-                        <div class="buttons flex gap-3 justify-center items-center">
-                            <button
-                                class="border rounded-3xl p-2 px-5 border-black font-medium  hover:text-white transition duration-500 hover:bg-[#333] "><a
-                                    href="https://github.com/JeetKumarRamnani/find-jobs-portal-design"
-                                    target="_blank">Github</a></button>
-                            <button
-                                class="border rounded-3xl p-2 px-5 border-black font-medium hover:text-white transition duration-500 hover:bg-[#333] "><a
-                                    href="https://find-jobs-portal-design.netlify.app/" target="_blank">Live
-                                    Demo</a></button>
-                        </div>
-                    </article>
+                    <div id="projectsContainer"
+                        class="project-showcase mt-5 flex flex-col gap-5 lg:flex-row border-2 p-8 overflow-hidden">
 
-                    <article class="project-3 flex flex-col gap-5 border-2 rounded-2xl overflow-hidden p-8 w-full">
-                        <img src="./assests/project-3.PNG" alt="project 3" class="w-full h-72 rounded-2xl object-cover">
-                        <h3 class="font-semibold text-2xl">Project Three</h3>
-                        <div class="buttons flex gap-3 justify-center items-center">
-                            <button
-                                class="border rounded-3xl p-2 px-5 border-black font-medium  hover:text-white transition duration-500 hover:bg-[#333] "><a
-                                    href="https://github.com/JeetKumarRamnani/Weather-App/"
-                                    target="_blank">Github</a></button>
-                            <button
-                                class="border rounded-3xl p-2 px-5 border-black font-medium hover:text-white transition duration-500 hover:bg-[#333] "><a
-                                    href="https://jeetkumarramnani.github.io/Weather-App/" target="_blank">Live
-                                    Demo</a></button>
-                        </div>
-                    </article>
+
+                        <article class="project-1 flex flex-col gap-5 border-2 rounded-2xl overflow-hidden p-8 w-full">
+                            <img src="./assests/project-1.PNG" alt="project 1"
+                                class="w-full h-72 rounded-2xl object-cover">
+                            <h3 class="font-semibold text-2xl">Project One</h3>
+                            <div class="buttons flex gap-3 justify-center items-center">
+                                <button
+                                    class="border rounded-3xl p-2 px-5 border-black font-medium  hover:text-white transition duration-500 hover:bg-[#333] "><a
+                                        href="https://github.com/JeetKumarRamnani/blog-website"
+                                        target="_blank">Github</a></button>
+                                <button
+                                    class="border rounded-3xl p-2 px-5 border-black font-medium hover:text-white transition duration-500 hover:bg-[#333] "><a
+                                        href="https://blog-for-programmers.netlify.app/" target="_blank">Live
+                                        Demo</a></button>
+                            </div>
+                        </article>
+
+                        <article class="project-2 flex flex-col gap-5 border-2 rounded-2xl overflow-hidden p-8 w-full">
+                            <img src="./assests/project-2.PNG" alt="project 2"
+                                class="w-full h-72 rounded-2xl object-cover">
+                            <h3 class="font-semibold text-2xl">Project Two</h3>
+                            <div class="buttons flex gap-3 justify-center items-center">
+                                <button
+                                    class="border rounded-3xl p-2 px-5 border-black font-medium  hover:text-white transition duration-500 hover:bg-[#333] "><a
+                                        href="https://github.com/JeetKumarRamnani/find-jobs-portal-design"
+                                        target="_blank">Github</a></button>
+                                <button
+                                    class="border rounded-3xl p-2 px-5 border-black font-medium hover:text-white transition duration-500 hover:bg-[#333] "><a
+                                        href="https://find-jobs-portal-design.netlify.app/" target="_blank">Live
+                                        Demo</a></button>
+                            </div>
+                        </article>
+
+                        <article class="project-3 flex flex-col gap-5 border-2 rounded-2xl overflow-hidden p-8 w-full">
+                            <img src="./assests/project-3.PNG" alt="project 3"
+                                class="w-full h-72 rounded-2xl object-cover">
+                            <h3 class="font-semibold text-2xl">Project Three</h3>
+                            <div class="buttons flex gap-3 justify-center items-center">
+                                <button
+                                    class="border rounded-3xl p-2 px-5 border-black font-medium  hover:text-white transition duration-500 hover:bg-[#333] "><a
+                                        href="https://github.com/JeetKumarRamnani/Weather-App/"
+                                        target="_blank">Github</a></button>
+                                <button
+                                    class="border rounded-3xl p-2 px-5 border-black font-medium hover:text-white transition duration-500 hover:bg-[#333] "><a
+                                        href="https://jeetkumarramnani.github.io/Weather-App/" target="_blank">Live
+                                        Demo</a></button>
+                            </div>
+                        </article>
+                    </div>
                 </div>
+
             </section>
+
+            <!-- PROJETCS SECTION Ended -->
 
             <section id="contact"
                 class="Contact-Me mb-48  w-full  text-center flex flex-col items-center justify-center gap-5 ">
@@ -386,13 +405,34 @@
         const mobileNavbar = document.querySelector(".mobile-navbar");
         const scrollToTopBtn = document.querySelector("#scrollToTopBtn");
         const projectsContainer = document.getElementById("projectsContainer");
+        const leftArrow = document.getElementById("leftArrow");
+        const rightArrow = document.getElementById("rightArrow");
 
-        console.log(projectsContainer)
+        // console.log(projectsContainer.children)
+        const loopedChilderns = Array.from(projectsContainer.children);
+        // console.log(loopedChilderns)
+
         hamburger.addEventListener("click", () => {
             mobileNavbar.classList.toggle("hidden")
         })
 
+        leftArrow.addEventListener("click", function () {
+            loopedChilderns.forEach((project) => {
+                console.dir(project.scrollLeft)
+                project.style.transform += "translateX(-200px)";
+                project.classList.add("transition", "duration-1000")
 
+            })
+
+        })
+
+        rightArrow.addEventListener("click", function () {
+            loopedChilderns.forEach((project) => {
+                project.style.transform += "translateX(200px)";
+                project.classList.add("transition", "duration-1000")
+            })
+
+        })
 
         window.addEventListener("scroll", () => {
             if (window.scrollY > 300) {
